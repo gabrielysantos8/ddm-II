@@ -83,8 +83,8 @@ listaHorizontal: {
 },
 
 cardMusica: {
-  width: 140,
-  marginRight: 14,
+  width: 150,
+  marginRight: 15,
 },
 
 capaMusica: {
@@ -173,6 +173,24 @@ textoNavAtivo: {
   textAlign: 'center',
 },
 
+textoPequeno: {
+  color: '#ffffff'
+},
+
+botaoOuvir:{
+  backgroundColor: '#1e1b2e',
+  width: 50,
+  height: 50,
+  borderRadius: '50%',
+  marginTop: 10,
+  margin: 'auto',
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+
+verTodos: {
+  color: '#ffffff'
+},
 
 });
 export default styles;

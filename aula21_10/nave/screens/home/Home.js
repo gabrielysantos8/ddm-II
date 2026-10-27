@@ -59,10 +59,9 @@ export default function Home({ navigation }) {
             <View style={styles.botaoOuvir}>
               <Ionicons
                 name="play"
-                size={18}
-                color="#1e1b2e"
+                size={30}
+                color="#403451"
               />
-              <Text style={styles.textoOuvir}>Ouvir música</Text>
             </View>
           </View>
         </TouchableOpacity>
@@ -70,18 +69,16 @@ export default function Home({ navigation }) {
         {/* Músicas populares */}
         <View style={styles.cabecalhoSecao}>
           <Text style={styles.tituloSecao}>Para ouvir hoje</Text>
-          <Ionicons
-            name="headset-outline"
-            size={23}
-            color="#c88afc"
-          />
         </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.listaHorizontal}
-        >
+          <ScrollView
+            horizontal
+            nestedScrollEnabled={true}
+            showsHorizontalScrollIndicator={false}
+            style={styles.listaHorizontal}
+            contentContainerStyle={styles.conteudoMusicas}
+          >
+            
           <TouchableOpacity
             style={styles.cardMusica}
             onPress={() => navigation.navigate('Musica')}
@@ -94,24 +91,8 @@ export default function Home({ navigation }) {
               />
             </View>
 
-            <Text style={styles.nomeMusica}>Midnight Rain</Text>
-            <Text style={styles.artista}>Taylor Swift</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.cardMusica}
-            onPress={() => navigation.navigate('Musica')}
-          >
-            <View style={styles.capaMusica}>
-              <Ionicons
-                name="heart"
-                size={55}
-                color="#c88afc"
-              />
-            </View>
-
-            <Text style={styles.nomeMusica}>Cruel Summer</Text>
-            <Text style={styles.artista}>Taylor Swift</Text>
+            <Text style={styles.nomeMusica}>Put the Record On</Text>
+            <Text style={styles.artista}>Kylie Cantrall</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -126,8 +107,8 @@ export default function Home({ navigation }) {
               />
             </View>
 
-            <Text style={styles.nomeMusica}>Enchanted</Text>
-            <Text style={styles.artista}>Taylor Swift</Text>
+            <Text style={styles.nomeMusica}>Silent Treatment</Text>
+            <Text style={styles.artista}>Freya Skye</Text>
           </TouchableOpacity>
         </ScrollView>
 
